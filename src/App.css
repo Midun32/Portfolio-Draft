@@ -1,0 +1,135 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+  background-color: #7af5ed;
+}
+html,
+#__next {
+	height: 100%;
+	width: 100%;
+}
+@keyframes fade {
+  0% {
+    opacity: 0; /* Start with the text fully transparent */
+  }
+  50% {
+    opacity: 1; /* Fade the text in to fully opaque */
+  }
+  100% {
+    opacity: 0; /* Fade the text out to fully transparent */
+  }
+}
+@keyframes slide {
+  0% {
+    transform: translateX(-100%); /* Start offscreen to the left */
+  }
+  100% {
+    transform: translateX(100%); /* Move offscreen to the right */
+  }
+}
+/* Define the keyframes for the animation */
+/* @keyframes word-fade-in {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
+.intro{
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  animation-name: slide;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.imag{
+  padding: 10px;
+}
+/* .me{
+  animation-name: word-fade-in;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite; 
+} */
+
+#text-container {
+  font-size: 26px;
+  font-family: monospace;
+  white-space: nowrap; /* Prevent line breaks */
+  overflow: hidden; /* Hide overflow */
+  border-right: 3px solid #fff; /* Create a blinking cursor effect */
+}
+
+/* Animate the text */
+.typewriter {
+  animation: typing 1s steps(25) 1s forwards;
+}
+
+/* Define the keyframes for the animation */
+@keyframes typing {
+  from { width: 0; } /* Start with no width */
+  to { width: 100%; } /* End with full width */
+}
+
+.imag {
+  overflow: hidden; /* Hide overflowing text */
+  white-space: nowrap; /* Prevent line breaks */
+  animation: typing 6s steps(24) infinite; /* Use the "typing" animation */
+}
+
+@keyframes typing {
+  from {
+    width: 0; /* Start with no width */
+  }
+  to {
+    width: 100%; /* End with full width */
+  }
+}
+
+.d-block{
+  height: 680px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.minep{
+  width: 40%;
+  height: 50%;
+}
+.toggleB{
+  font-size:12px;
+  width: 70px;
+  height: 35px;
+  border-radius:10px;
+}
+
+.App.light {
+/*   background-color: #fff; */
+  background-color: #7af5ed
+  color: #333;
+}
+
+.App.dark {
+  background-color: #001657;
+  color: #fff;
+}
